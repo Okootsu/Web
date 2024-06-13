@@ -1,0 +1,41 @@
+#encabezado {
+    width: 300px;
+    padding:0px;
+    margin: 0px;
+}
+
+hr {
+    margin: 0px;
+    padding: 0px;
+}
+
+.boton {
+    padding: 10px 15px;
+    margin: 10px;
+    background-color: aqua;
+    border-radius: 20px;
+}
+
+.boton:hover {
+    background-color: rgba(4, 209, 209, 0.979);
+    cursor: pointer;
+}
+
+.boton:active{
+    background-color: rgba(4, 177, 177, 0.986);
+}
+
+.menu_usuario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid;
+}
+
+#logo_liceo {
+    display: flex;
+    justify-content: center;
+    border: 2px solid;
+    margin: 10px;
+    
+}
