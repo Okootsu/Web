@@ -9,20 +9,50 @@ hr {
     padding: 0px;
 }
 
+p {
+    margin: 5px;
+}
+
 .boton {
-    padding: 10px 15px;
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 15px;
+    border: 2px solid rgb(193, 163, 98);
+    border-radius: 34px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
     margin: 10px;
-    background-color: aqua;
-    border-radius: 20px;
+}
+
+.boton::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: rgb(193, 163, 98);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.boton:hover::before {
+    scale: 3;
 }
 
 .boton:hover {
-    background-color: rgba(4, 209, 209, 0.979);
-    cursor: pointer;
+    color: #212121;
+    scale:1.1;
+    box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
 }
 
 .boton:active{
-    background-color: rgba(4, 177, 177, 0.986);
+    scale: 1;
 }
 
 .menu_usuario {
@@ -38,4 +68,12 @@ hr {
     border: 2px solid;
     margin: 10px;
     
+}
+
+#pie_cabeza {
+    background-color: black;
+}
+
+#copiray{
+    color: white;
 }
