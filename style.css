@@ -1,3 +1,18 @@
+:root {
+    --electric-violet-50: #f3f3ff;
+    --electric-violet-100: #e8e8ff;
+    --electric-violet-200: #d4d4ff;
+    --electric-violet-300: #b4b2ff;
+    --electric-violet-400: #8f87fe;
+    --electric-violet-500: #6a56fc;
+    --electric-violet-600: #6747f5;
+    --electric-violet-700: #4821e0;
+    --electric-violet-800: #3c1bbc;
+    --electric-violet-900: #33189a;
+    --electric-violet-950: #1c0d68;
+    }
+
+
 #encabezado {
     width: 300px;
     padding:0px;
@@ -18,7 +33,7 @@ p {
     position: relative;
     padding: 10px 24px;
     font-size: 15px;
-    border: 2px solid rgb(193, 163, 98);
+    border: 2px solid var(--electric-violet-500);
     border-radius: 34px;
     background-color: transparent;
     font-weight: 600;
@@ -37,7 +52,7 @@ p {
     border-radius: inherit;
     scale: 0;
     z-index: -1;
-    background-color: rgb(193, 163, 98);
+    background-color: var(--electric-violet-600);
     transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
@@ -48,7 +63,7 @@ p {
 .boton:hover {
     color: #212121;
     scale:1.1;
-    box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+    box-shadow: 0 0px 20px var(--electric-violet-100);
 }
 
 .boton:active{
@@ -60,17 +75,28 @@ p {
     justify-content: center;
     align-items: center;
     border: 3px solid;
+    border-radius: 5px;
 }
 
 #logo_liceo {
     display: flex;
     justify-content: center;
     border: 2px solid;
+    border-radius: 5px;
     margin: 10px;
+}
+
+#organigrama {
+    display: flex;
+    justify-content: center;
+    border: black solid;
+    border-radius: 5px;
+    margin: 5px;
 }
 
 #pie_cabeza {
     background-color: black;
+    border-radius: 5px;
 }
 
 #copiray{
