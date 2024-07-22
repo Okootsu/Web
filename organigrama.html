@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Inicio</title>
+	<title>Organigrama</title>
 	<link rel="icon" type="image/x-icon" href="Imagen\icon.png">
-	<link rel="stylesheet" href="style.css">
-	<script src="script.js"></script>
+	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+
+<header>
 	<img id="encabezado" src="Imagen/Imagen1.png">
 	<hr color="#6747f5">
 	<p>Sector Centro, Frente a la Av Bolívar, Motatan Edo. Trujillo Venezuela</p>
 	<hr color="#6747f5">
 
 	<div id="logo_liceo">
-		<img src="Imagen/Liceo Hilario Pizani Anselmi.png" width="300">
+		<a href="index.html"><img src="Imagen/Liceo Hilario Pizani Anselmi.png" width="300"></a>
 	</div>
 
-	<div class="menu_usuario">
+	<div class="contenedor" id="menu_usuario">
 		<button class="boton" id="b_inicio" onclick="inicio()">Inicio</button>
-		<button class="boton" id="b_institucion">Institucion</button>
+		<button class="boton" id="b_institucion" onclick="institucion()">Institucion</button>
 		<button class="boton" id="b_organigrama" onclick="organigrama()">Organigrama</button>
+		<button class="boton" id="b_historia">Historia</button>
 		<button class="boton" id="b_noticias">Noticias</button>
 		<button class="boton" id="b_zona_descarga">Zona de descarga</button>
 	</div>
+</header>
 
+<body>
 	<p>Organigrama Liceo Hilario Pizani Anselmi</p>
 	<div id="organigrama">
 		<img id="org" src="Imagen/Organigrama liceo Hilario.jpg" width="600">
 	</div>
-
-
-
+	<script src="js/script.js"></script>
 </body>
 
 <footer>

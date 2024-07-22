@@ -1,0 +1,168 @@
+/* Paleta de colores de los botones */
+:root {
+    --electric-violet-50: #f3f3ff;
+    --electric-violet-100: #e8e8ff;
+    --electric-violet-200: #d4d4ff;
+    --electric-violet-300: #b4b2ff;
+    --electric-violet-400: #8f87fe;
+    --electric-violet-500: #6a56fc;
+    --electric-violet-600: #6747f5;
+    --electric-violet-700: #4821e0;
+    --electric-violet-800: #3c1bbc;
+    --electric-violet-900: #33189a;
+    --electric-violet-950: #1c0d68;
+}
+
+body{
+    font-family: Arial;
+}
+
+#encabezado {
+    width: 300px;
+    padding:0px;
+    margin: 0px;
+}
+
+
+.contenedor {
+    border: 2px solid;
+    border-radius: 5px;
+    margin: 10px auto;
+}
+
+ 
+/* Botones de accion */
+.boton {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 15px;
+    border: 2px solid var(--electric-violet-500);
+    border-radius: 34px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+    margin: 10px;
+}
+
+.boton::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: var(--electric-violet-600);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.boton:hover::before {
+    scale: 3;
+}
+
+.boton:hover {
+    color: #212121;
+    scale:1.1;
+    box-shadow: 0 0px 20px var(--electric-violet-100);
+}
+
+.boton:active{
+    scale: 1;
+}
+/* Final de los Botones */
+
+#menu_usuario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+hr {
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    margin: 5px;
+}
+
+
+
+#logo_liceo {
+    display: flex;
+    justify-content: center;
+    border: 2px solid;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#organigrama {
+    display: flex;
+    justify-content: center;
+    border: black solid;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#pie_cabeza {
+    background-color: black;
+    border-radius: 5px;
+    padding: 2px;
+    color: white;
+}
+
+
+#seccion_bienvenida{
+    display: flex;
+    width: 900px;
+}
+
+#bienvenida{
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;   
+}
+
+
+/*nuevo*/
+.gallery {
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.image {
+    min-width: 100%;
+    box-sizing: border-box;
+    height: 250px;
+}
+.buttons {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+button {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
