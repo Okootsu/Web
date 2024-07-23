@@ -14,20 +14,86 @@
 }
 
 body{
-    font-family: Arial;
+    font-family: nunito,Arial;
+    background: linear-gradient(to right,rgb(80, 80, 195),rgb(123, 58, 236));
 }
 
-#encabezado {
-    width: 300px;
-    padding:0px;
-    margin: 0px;
+header{
+    background-color: rgb(110, 117, 236);
+    border-radius: 10px;
 }
 
 
 .contenedor {
-    border: 2px solid;
+    border: 2px solid black;
     border-radius: 5px;
-    margin: 10px auto;
+    margin: 30px 20px;
+    background-color: white;
+}
+
+.encabezado{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-items: flex-end;
+}
+
+.encabezado h3{
+    color: white;
+    margin-left: 10px;
+}
+
+.botones_usuario {
+    display: flex; /* Establece el contenedor de botones como flex */
+    justify-content: flex-end; /* Alinea los botones a la derecha */
+    flex-grow: 1; /* Permite que el contenedor de botones ocupe el espacio restante */
+    border: transparent;
+}
+
+.boton_menu{
+    display: none;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.icon_menu {
+    font-size: 18px;
+    background-color: transparent;
+    border: 2px solid white;
+    cursor: pointer;
+    color: white;
+    margin-right: 5px;
+}
+
+.menu{
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    z-index: 1000;
+    width: calc(100% - 25px);
+    height: calc(100% - 25px);
+    margin: 5px;
+    background: rgb(110, 117, 236);
+    border-radius: 10px;
+}
+
+.menu_movil{
+    display: flex;
+    flex-direction: column;
+}
+
+#portada{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+#portada h1{
+    margin: 10px;
 }
 
  
@@ -37,13 +103,14 @@ body{
     position: relative;
     padding: 10px 24px;
     font-size: 15px;
-    border: 2px solid var(--electric-violet-500);
+    border: 2px solid white;
     border-radius: 34px;
     background-color: transparent;
     font-weight: 600;
     transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
     overflow: hidden;
     margin: 10px;
+    color: white;
 }
 
 .boton::before {
@@ -65,7 +132,7 @@ body{
 }
 
 .boton:hover {
-    color: #212121;
+    color: white;
     scale:1.1;
     box-shadow: 0 0px 20px var(--electric-violet-100);
 }
@@ -80,18 +147,6 @@ body{
     justify-content: center;
     align-items: center;
 }
-
-
-hr {
-    margin: 0px;
-    padding: 0px;
-}
-
-p {
-    margin: 5px;
-}
-
-
 
 #logo_liceo {
     display: flex;
@@ -117,27 +172,23 @@ p {
 }
 
 
-#seccion_bienvenida{
-    display: flex;
-    width: 900px;
+#parrafo{
+    margin: 30px 20px;
+    padding: 20px;
 }
 
-#bienvenida{
+
+/* Seccion de la galeria de imagenes */
+#galeria{
     display: flex;
-    flex-direction: column;
-    margin-right: 100px;
-    text-align: center;
     justify-content: center;
-    align-items: center;   
+    padding: 10px;
 }
 
-
-/*nuevo*/
 .gallery {
     width: 80%;
     max-width: 600px;
     position: relative;
-    border: 2px solid #ccc;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -148,7 +199,6 @@ p {
 .image {
     min-width: 100%;
     box-sizing: border-box;
-    height: 250px;
 }
 .buttons {
     display: flex;
@@ -158,11 +208,32 @@ p {
     justify-content: space-between;
     transform: translateY(-50%);
 }
-button {
+.botones_galeria {
     background-color: rgba(255, 255, 255, 0.7);
     border: none;
     cursor: pointer;
     padding: 10px;
     border-radius: 5px;
     font-size: 18px;
+    
+}
+/* Final de la galeria */
+
+
+@media screen and (max-width:800px) {
+    header{
+        display: flex;
+    }
+
+    .menu{
+        display: flex;
+    }
+
+    .botones_usuario{
+        display: none;
+    }
+
+    .boton_menu{
+        display: flex;
+    }
 }

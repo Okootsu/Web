@@ -6,34 +6,54 @@
 	<title>Inicio</title>
 	<link rel="icon" type="image/x-icon" href="Imagen\icon.png">
 	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
 </head>
 
-<header>
-	<img id="encabezado" src="Imagen/Imagen1.png">
-	<hr color="#6747f5">
-	<p>Sector Centro, Frente a la Av Bolívar, Motatan Edo. Trujillo Venezuela</p>
-	<hr color="#6747f5">
 
-	<div id="logo_liceo">
-		<a href="index.html"><img src="Imagen/Liceo Hilario Pizani Anselmi.png" width="300"></a>
-	</div>
-
-	<div class="contenedor" id="menu_usuario">
-		<button class="boton" id="b_inicio" onclick="inicio()">Inicio</button>
-		<button class="boton" id="b_institucion" onclick="institucion()">Institucion</button>
-		<button class="boton" id="b_organigrama" onclick="organigrama()">Organigrama</button>
-		<button class="boton" id="b_historia">Historia</button>
-		<button class="boton" id="b_noticias">Noticias</button>
-		<button class="boton" id="b_zona_descarga">Zona de descarga</button>
-	</div>
-</header>
 
 <body>
-	<div class="contenedor" id="seccion_bienvenida">
-		<div class="contenedor" id="bienvenida">
-			<b><p>¡BIENVENIDO A NUESTRO SITIO WEB!</p></b>
-			<p>Le damos la bienvenida a nuestro nuevo sitio web institucional del Liceo "Hilario Pizani Anselmi"</p>
+
+	<header>
+		<div class="encabezado">
+			<img src="Imagen/En circulo.png" style="width: 100px;" alt="">
+			<h3>Liceo Hilario Pizani Anselmi</h3>
+			<div class="boton_menu">
+				<button class="icon_menu">☰</button>
+			</div>
+			<div class="botones_usuario">
+				<button class="boton" id="b_inicio" onclick="inicio()">Inicio</button>
+				<button class="boton" id="b_institucion" onclick="institucion()">Institucion</button>
+				<button class="boton" id="b_noticias">Noticias</button>
+				<button class="boton" id="b_zona_descarga">Zona de descarga</button>
+			</div>
 		</div>
+	</header>
+
+	<div class="menu">
+		<div class="menu_movil">
+			<button class="boton" id="b_inicio" onclick="inicio()">Inicio</button>
+			<button class="boton" id="b_institucion" onclick="institucion()">Institucion</button>
+			<button class="boton" id="b_noticias">Noticias</button>
+			<button class="boton" id="b_zona_descarga">Zona de descarga</button>
+		</div>
+	</div>
+
+	<div class="contenedor" id="portada">
+		<img src="Imagen/En circulo.png" width="250px" alt="">
+		<h1>Liceo Hilario Pizani Anselmi</h1>
+		<p>Sector Centro. Frente a la Av Bolívar. Motatan, Edo. Trujillo, Venezuela</p>
+	</div>
+
+	<div class="contenedor" id="parrafo">
+		<h3 class="titulo">¡BIENVENIDO A NUESTRO SITIO WEB!</h3>
+		<p>Le damos la bienvenida a nuestro nuevo sitio web institucional del Liceo "Hilario Pizani Anselmi"</p>
+	</div>
+	
+	<div class="contenedor" id="galeria">
 		<div class="gallery">
 			<div class="images">
 				<img class="image" src="Imagen/Bienvenida/Imagen1.jpg" alt="Imagen 1">
@@ -42,14 +62,14 @@
 				<img class="image" src="Imagen/Bienvenida/Imagen4.jpg" alt="Imagen 4">
 			</div>
 			<div class="buttons">
-				<button onclick="prevImage()">&#10094;</button>
-				<button onclick="nextImage()">&#10095;</button>
+				<button class="botones_galeria" onclick="prevImage()">&#10094;</button>
+				<button class="botones_galeria" onclick="nextImage()">&#10095;</button>
 			</div>
 		</div>
 	</div>
 
-	<div>
-		<p>¿Quienes somos?</p>
+	<div class="contenedor" id="parrafo" >
+		<h3 class="titulo">¿Quienes somos?</h3>
 		<p>
 			En el liceo "Hilario Pizani Anselmi, nos dedicamos a brindar una educación de calidad que forme integralmente a nuestros estudiantes. Fundada en [año de fundación], nuestra institución ha crecido y evolucionado con el compromiso de fomentar un ambiente de aprendizaje inclusivo y estimulante.
 		</p>
