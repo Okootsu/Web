@@ -17,12 +17,23 @@
 
 <body>
 
+	
+	<div class="menu">
+		<div class="menu_movil">
+			<button class="icon_menu" id="btn_menu" onclick="toggleMenu()">☰</button>
+			<button class="boton" id="b_inicio" onclick="inicio()">Inicio</button>
+			<button class="boton" id="b_institucion" onclick="institucion()">Institucion</button>
+			<button class="boton" id="b_noticias">Noticias</button>
+			<button class="boton" id="b_zona_descarga">Zona de descarga</button>
+		</div>
+	</div>
+
 	<header>
 		<div class="encabezado">
 			<img src="Imagen/En circulo.png" style="width: 100px;" alt="">
 			<h3>Liceo Hilario Pizani Anselmi</h3>
 			<div class="boton_menu">
-				<button class="icon_menu">☰</button>
+				<button class="icon_menu" onclick="toggleMenu()">☰</button>
 			</div>
 			<div class="botones_usuario">
 				<button class="boton" id="b_inicio" onclick="inicio()">Inicio</button>
@@ -33,14 +44,6 @@
 		</div>
 	</header>
 
-	<div class="menu">
-		<div class="menu_movil">
-			<button class="boton" id="b_inicio" onclick="inicio()">Inicio</button>
-			<button class="boton" id="b_institucion" onclick="institucion()">Institucion</button>
-			<button class="boton" id="b_noticias">Noticias</button>
-			<button class="boton" id="b_zona_descarga">Zona de descarga</button>
-		</div>
-	</div>
 
 	<div class="contenedor" id="portada">
 		<img src="Imagen/En circulo.png" width="250px" alt="">
