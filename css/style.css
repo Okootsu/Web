@@ -71,9 +71,9 @@ header{
     position: fixed;
     align-items: center;
     z-index: 1000;
-    width: calc(100% - 25px);
+    width: calc(100% - 15px);
     height: calc(100% - 25px);
-    margin: 5px;
+    margin: 0px;
     background: rgb(110, 117, 236);
     border-radius: 10px;
 }
@@ -221,12 +221,8 @@ header{
 
 
 @media screen and (max-width:800px) {
-    header{
-        display: flex;
-    }
-
     .menu{
-        display: flex;
+        display: none;
     }
 
     .botones_usuario{
@@ -236,4 +232,5 @@ header{
     .boton_menu{
         display: flex;
     }
+
 }
