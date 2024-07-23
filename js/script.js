@@ -37,3 +37,14 @@ function prevImage() {
 
 // Cambiar automáticamente cada 3 segundos
 setInterval(nextImage, 7000);
+
+
+function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    const isVisible = menu.style.display === 'flex';
+    
+    menu.style.display = isVisible ? 'none' : 'flex';
+    
+    // Deshabilitar o habilitar el desplazamiento
+    document.body.style.overflow = isVisible ? 'auto' : 'hidden';
+}
