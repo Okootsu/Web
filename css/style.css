@@ -56,7 +56,7 @@ header{
     flex-grow: 1;
 }
 
-.icon_menu {
+#icon_menu {
     font-size: 18px;
     background-color: transparent;
     border: 2px solid white;
@@ -159,16 +159,27 @@ header{
 #organigrama {
     display: flex;
     justify-content: center;
-    border: black solid;
     border-radius: 5px;
-    margin: 5px;
+    background-color: white;
+}
+
+#organigrama img{
+    min-width: 100%;
 }
 
 #pie_cabeza {
     background-color: black;
     border-radius: 5px;
-    padding: 2px;
+    padding: 10px;
     color: white;
+}
+
+#pie_cabeza h3 b p {
+    margin: 5px;
+}
+
+#pie_cabeza h3 {
+    margin: 2px;
 }
 
 

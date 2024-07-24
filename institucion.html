@@ -1,44 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Institucion</title>
 	<link rel="icon" type="image/x-icon" href="Imagen\icon.png">
 	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
 </head>
 
-<header>
-	<img id="encabezado" src="Imagen/Imagen1.png">
-	<hr color="#6747f5">
-	<p>Sector Centro, Frente a la Av Bolívar, Motatan Edo. Trujillo Venezuela</p>
-	<hr color="#6747f5">
 
-	<div id="logo_liceo">
-		<a href="index.html"><img src="Imagen/Liceo Hilario Pizani Anselmi.png" width="300"></a>
-	</div>
-
-	<div class="contenedor" id="menu_usuario">
-		<button class="boton" id="b_inicio" onclick="inicio()">Inicio</button>
-		<button class="boton" id="b_institucion" onclick="institucion()">Institucion</button>
-		<button class="boton" id="b_organigrama" onclick="organigrama()">Organigrama</button>
-		<button class="boton" id="b_historia">Historia</button>
-		<button class="boton" id="b_noticias">Noticias</button>
-		<button class="boton" id="b_zona_descarga">Zona de descarga</button>
-	</div>
-</header>
 
 <body>
-    <b>Misión</b> 
-	<p style="text-align: justify;">      
-        El liceo “Hilario Pizani Anselmi”, de dependencia nacional adscrito al Ministerio Popular para la Educación, es una institución orientada para la educación de jóvenes del municipio Motatan del estado Trujillo, mediante transformación curricular adaptada a nuestra realidad actual, sin exclusión, discriminación de razas, sexo o religión, busca el desarrollo de un ciudadano participativo, critico, reflexivo y significativo, fundamentado en los saberes teóricos-prácticos contemporáneo bajo lineamientos de la nación venezolana promoviendo los valores de solidaridad, cooperación y trabajo como instrumento de servicio a la comunidad.
-    </p>
 
-    <br>
+	<div class="menu">
+		<div class="menu_movil">
+			<button class="boton" id="icon_menu" onclick="toggleMenu()">☰</button>
+			<button class="boton" id="b_inicio" onclick="inicio()">Inicio</button>
+			<button class="boton" id="b_institucion" onclick="institucion()">Institucion</button>
+			<button class="boton" id="b_noticias">Noticias</button>
+			<button class="boton" id="b_zona_descarga">Zona de descarga</button>
+		</div>
+	</div>
 
-    <b>Visión</b>
-    <p style="text-align: justify;">
-        El liceo “Hilario Pizani Anselmi”, dependiente del Ministerio del Poder Popular para la Educación, que busca formar adolecentes del municipio Motatan a través de una educación holística, integral e identificada con las nuevas propuestas teóricas contemporáneas para lograr un ciudadano participativo, productivo y solidario con habilidades y destrezas que le permitan ingresar al campo laboral y proseguir sus estudios a nivel superior, con conocimientos en el manejo de las nuevas tecnologías enmarcadas en la conservación del ambiente con espíritu humano de trascendencia en la nación que queremos construir. 
-    </p>
+	<header>
+		<div class="encabezado">
+			<img src="Imagen/En circulo.png" style="width: 100px;" alt="">
+			<h3>Liceo Hilario Pizani Anselmi</h3>
+			<div class="boton_menu">
+				<button class="boton" id="icon_menu" onclick="toggleMenu()">☰</button>
+			</div>
+			<div class="botones_usuario">
+				<button class="boton" id="b_inicio" onclick="inicio()">Inicio</button>
+				<button class="boton" id="b_institucion" onclick="institucion()">Institucion</button>
+				<button class="boton" id="b_noticias">Noticias</button>
+				<button class="boton" id="b_zona_descarga">Zona de descarga</button>
+			</div>
+		</div>
+	</header>
 
+
+
+	<div class="contenedor" id="parrafo">
+		<b>Misión</b> 
+		<p style="text-align: justify;">      
+        	El liceo “Hilario Pizani Anselmi”, de dependencia nacional adscrito al Ministerio Popular para la Educación, es una institución orientada para la educación de jóvenes del municipio Motatan del estado Trujillo, mediante transformación curricular adaptada a nuestra realidad actual, sin exclusión, discriminación de razas, sexo o religión, busca el desarrollo de un ciudadano participativo, critico, reflexivo y significativo, fundamentado en los saberes teóricos-prácticos contemporáneo bajo lineamientos de la nación venezolana promoviendo los valores de solidaridad, cooperación y trabajo como instrumento de servicio a la comunidad.
+    	</p>
+	</div>
+    
+	<div class="contenedor" id="parrafo">
+		<b>Visión</b>
+    	<p style="text-align: justify;">
+        	El liceo “Hilario Pizani Anselmi”, dependiente del Ministerio del Poder Popular para la Educación, que busca formar adolecentes del municipio Motatan a través de una educación holística, integral e identificada con las nuevas propuestas teóricas contemporáneas para lograr un ciudadano participativo, productivo y solidario con habilidades y destrezas que le permitan ingresar al campo laboral y proseguir sus estudios a nivel superior, con conocimientos en el manejo de las nuevas tecnologías enmarcadas en la conservación del ambiente con espíritu humano de trascendencia en la nación que queremos construir. 
+    	</p>
+	</div>
+    
 	<script src="js/script.js"></script>
 </body>
 
