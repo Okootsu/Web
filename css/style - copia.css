@@ -23,44 +23,38 @@ header{
     border-radius: 10px;
 }
 
-/* Estilo para contenedores */
+
 .contenedor {
     border-radius: 5px;
     margin: 30px 20px;
     background-color: white;
 }
 
-/* Encabezado */
 .encabezado{
     display: flex;
     align-items: center;
     padding: 10px;
     justify-items: flex-end;
 }
+
 .encabezado h3{
     color: white;
     margin-left: 10px;
 }
 
-/* Contenedor para los botones del menú */
 .botones_menu {
     display: flex; /* Establece el contenedor de botones como flex */
     justify-content: flex-end; /* Alinea los botones a la derecha */
     flex-grow: 1; /* Permite que el contenedor de botones ocupe el espacio restante */
     border: transparent;
 }
+
+
 .boton_menu{
     display: flex;
     justify-content: flex-end;
     flex-grow: 1;
 }
-
-.menu_movil {
-    display: none;
-    justify-content: flex-end;
-    flex-grow: 1;
-}
-
 
 #icon_menu {
     font-size: 18px;
@@ -70,6 +64,13 @@ header{
     color: white;
     margin-right: 5px;
 }
+
+.menu_movil {
+    display: none;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
 
 
 #portada{
@@ -81,12 +82,13 @@ header{
     text-align: center;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
+
 #portada h1{
     margin: 10px;
 }
 
  
-/* Estilo para los botones del menú */
+/* Botones de accion */
 .boton {
     cursor: pointer;
     position: relative;
@@ -142,8 +144,6 @@ header{
     margin: 10px;
 }
 
-
-/* Organigrama */
 #organigrama {
     display: flex;
     justify-content: center;
@@ -151,61 +151,33 @@ header{
     background-color: white;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
+
 #organigrama img{
     width: 80%;
 }
 
-
-/* Pie de página */
-#pie_pagina {
+#pie_cabeza {
     background-color: black;
     border-radius: 5px;
     padding: 10px;
     color: white;
 }
-#pie_pagina h3 b p {
+
+#pie_cabeza h3 b p {
     margin: 5px;
 }
-#pie_pagina h3 {
+
+#pie_cabeza h3 {
     margin: 2px;
 }
 
-/* Parrafos */
+
 #parrafo{
     margin: 30px 20px;
     padding: 20px;
     text-align: justify;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
-    line-height: 1.5;
-    text-indent: 30px;
-    
 }
-
-
-/* Mostrar las Noticas */
-.mostrar_noticia{
-    border: 2px rgb(201, 201, 201) solid;
-    border-radius: 10px;
-    padding: 10px;
-    width: 50%;
-}
-.seccion_noticias{
-    display: flex;
-    justify-content: space-between;
-}
-.leer_mas{
-    display: flex;
-    justify-content: flex-end;
-}
-.leer_mas a{
-    text-decoration: none;
-    cursor: pointer;
-    color: white;
-    background-color: black;
-    border-radius: 5px;
-    padding: 5px;
-}
-
 
 
 /* Seccion de la galeria de imagenes */
@@ -215,6 +187,7 @@ header{
     padding: 10px;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
+
 .gallery {
     width: 80%;
     max-width: 600px;
@@ -250,20 +223,21 @@ header{
 /* Final de la galeria */
 
 
-
-/* Menu lateral Movil */
 #btn_nav{
     display: none;
 }
+
 .navegacion a{
     text-decoration: none;
     color: white;
 }
+
 .navegacion{
     display: flex;
     align-items: center;
     flex-direction: column;
 }
+
 nav{
     position: fixed;
     border-radius: 10px;
@@ -276,40 +250,9 @@ nav{
     background-color: #33189a;
     width: 95%;
 }
+
 #btn_nav:checked ~ nav {
     transform: translateX(-2%);
-}
-
-/* Pruebas */
-
-.opciones{
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-}
-.opciones > li > a{
-    display: block;
-    text-decoration: none;
-    color: white;
-}
-.segunda_opciones{
-    position: absolute;
-    display: none;
-    list-style: none;
-    width: 200px;
-    background-color: #3c1bbc;
-    padding: 5px;
-    border-radius: 10px;
-}
-.segunda_opciones a{
-    display: block;
-    color: white;
-    text-decoration: none;
-    text-align: left;
-}
-
-.opciones li:hover .segunda_opciones{
-    display: block;
 }
 
 

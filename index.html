@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,11 +13,51 @@
 
 </head>
 
+<header>
+	<div class="encabezado">
+		<img src="Imagen/En circulo.png" style="width: 100px;" alt="">
+		<h3>Liceo Hilario Pizani Anselmi</h3>
+		
+		<div class="botones_menu">
+            <div class="botones_menu">
+                <ul class="opciones">
+                    <li><a class="boton" href="index.html">Inicio</a></li>
+                    <li>
+                        <a class="boton" href="">Insitucion</a>
+                        <ul class="segunda_opciones">
+                            <li><a class="boton" href="institucion.html">Mision Vision</a></li>
+                            <li><a class="boton" href="historia.html">Historia</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="boton" href="noticias.html">Noticias</a></li>
+                    <li><a class="boton" href="">Zona de descarga</a></li>
+                </ul>
+            </div>
+        </div>
+		
+		<div class="menu_movil">
+			<label for="btn_nav" class="boton">☰</label>
+			<input type="checkbox" id="btn_nav">
+			<nav>
+				<div class="navegacion">
+					<a class="boton" href="index.html">Inicio</a>
+					<a class="boton" href="institucion.html">Institucion</a>
+					<a class="boton" href="organigrama.html">Organigrama</a>
+					<a class="boton" href="historia.html">Historia</a>
+					<a class="boton" href="noticias.html">Noticias</a>
+					<a class="boton" href="#">Zona de descargas</a>
+				</div>
+			</nav>
+		</div>
+
+	</div>
+</header>
+
+
 
 
 <body>
 
-	
 	<div class="menu">
 		<div class="menu_movil">
 			<div class="boton_menu">
@@ -30,21 +70,7 @@
 		</div>
 	</div>
 
-	<header>
-		<div class="encabezado">
-			<img src="Imagen/En circulo.png" style="width: 100px;" alt="">
-			<h3>Liceo Hilario Pizani Anselmi</h3>
-			<div class="boton_menu">
-				<button class="boton" id="icon_menu" onclick="toggleMenu()">☰</button>
-			</div>
-			<div class="botones_usuario">
-				<button class="boton" id="b_inicio" onclick="inicio()">Inicio</button>
-				<button class="boton" id="b_institucion" onclick="institucion()">Institucion</button>
-				<button class="boton" id="b_noticias">Noticias</button>
-				<button class="boton" id="b_zona_descarga">Zona de descarga</button>
-			</div>
-		</div>
-	</header>
+	
 
 
 	<div class="contenedor" id="portada">
@@ -76,7 +102,7 @@
 	<div class="contenedor" id="parrafo" >
 		<h3 class="titulo">¿Quienes somos?</h3>
 		<p>
-			En el liceo "Hilario Pizani Anselmi, nos dedicamos a brindar una educación de calidad que forme integralmente a nuestros estudiantes. Fundada en [año de fundación], nuestra institución ha crecido y evolucionado con el compromiso de fomentar un ambiente de aprendizaje inclusivo y estimulante.
+			En el liceo "Hilario Pizani Anselmi, nos dedicamos a brindar una educación de calidad que forme integralmente a nuestros estudiantes. Fundada en 1973, nuestra institución ha crecido y evolucionado con el compromiso de fomentar un ambiente de aprendizaje inclusivo y estimulante.
 		</p>
 	</div>
 
@@ -85,7 +111,7 @@
 </body>
 
 <footer>
-	<div id="pie_cabeza">
+	<div id="pie_pagina">
 		<h3>Liceo Hilario Pizani Anselmi</h3>
 		<b>Direccion:</b>
 		<p>Sector Centro. Frente a la Av Bolívar. Motatan Edo. Trujillo Venezuela</p>

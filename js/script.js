@@ -39,6 +39,10 @@ function prevImage() {
 setInterval(nextImage, 7000);
 
 
+
+
+/*
+// Menu Movil
 function toggleMenu() {
     const menu = document.querySelector('.menu');
     const isVisible = menu.style.display === 'flex';
@@ -47,4 +51,23 @@ function toggleMenu() {
     
     // Deshabilitar o habilitar el desplazamiento
     document.body.style.overflow = isVisible ? 'auto' : 'hidden';
+}
+*/
+
+
+
+
+function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    const isVisible = menu.classList.contains('show');
+    
+    if (isVisible) {
+        menu.classList.remove('show');
+        // Deshabilitar el desplazamiento
+        document.body.style.overflow = 'auto';
+    } else {
+        menu.classList.add('show');
+        // Habilitar el desplazamiento
+        document.body.style.overflow = 'hidden';
+    }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,38 +14,49 @@
 </head>
 
 
+<header>
+	<div class="encabezado">
+		<img src="Imagen/En circulo.png" style="width: 100px;" alt="">
+		<h3>Liceo Hilario Pizani Anselmi</h3>
+		
+		<div class="botones_menu">
+            <div class="botones_menu">
+                <ul class="opciones">
+                    <li><a class="boton" href="index.html">Inicio</a></li>
+                    <li>
+                        <a class="boton" href="">Insitucion</a>
+                        <ul class="segunda_opciones">
+                            <li><a class="boton" href="institucion.html">Mision Vision</a></li>
+                            <li><a class="boton" href="historia.html">Historia</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="boton" href="noticias.html">Noticias</a></li>
+                    <li><a class="boton" href="">Zona de descarga</a></li>
+                </ul>
+            </div>
+        </div>
+		
+		<div class="menu_movil">
+			<label for="btn_nav" class="boton">☰</label>
+			<input type="checkbox" id="btn_nav">
+			<nav>
+				<div class="navegacion">
+					<a class="boton" href="index.html">Inicio</a>
+					<a class="boton" href="institucion.html">Institucion</a>
+					<a class="boton" href="organigrama.html">Organigrama</a>
+					<a class="boton" href="historia.html">Historia</a>
+					<a class="boton" href="noticias.html">Noticias</a>
+					<a class="boton" href="#">Zona de descargas</a>
+				</div>
+			</nav>
+		</div>
+
+	</div>
+</header>
+
+
 
 <body>
-
-	<div class="menu">
-		<div class="menu_movil">
-			<div class="boton_menu">
-				<button class="boton" id="icon_menu" onclick="toggleMenu()">X</button>
-			</div>
-			<button class="boton" id="b_inicio" onclick="inicio()">Inicio</button>
-			<button class="boton" id="b_institucion" onclick="institucion()">Institucion</button>
-			<button class="boton" id="b_noticias">Noticias</button>
-			<button class="boton" id="b_zona_descarga">Zona de descarga</button>
-		</div>
-	</div>
-
-	<header>
-		<div class="encabezado">
-			<img src="Imagen/En circulo.png" style="width: 100px;" alt="">
-			<h3>Liceo Hilario Pizani Anselmi</h3>
-			<div class="boton_menu">
-				<button class="boton" id="icon_menu" onclick="toggleMenu()">☰</button>
-			</div>
-			<div class="botones_usuario">
-				<button class="boton" id="b_inicio" onclick="inicio()">Inicio</button>
-				<button class="boton" id="b_institucion" onclick="institucion()">Institucion</button>
-				<button class="boton" id="b_noticias">Noticias</button>
-				<button class="boton" id="b_zona_descarga">Zona de descarga</button>
-			</div>
-		</div>
-	</header>
-
-
 
 	<div class="contenedor" id="parrafo">
 		<b>Misión</b> 
@@ -65,7 +76,7 @@
 </body>
 
 <footer>
-	<div id="pie_cabeza">
+	<div id="pie_pagina">
 		<div id="copiray">
 			<h3>Liceo Hilario Pizani Anselmi</h3>
 			<b>Direccion:</b>
