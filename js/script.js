@@ -71,3 +71,16 @@ function toggleMenu() {
         document.body.style.overflow = 'hidden';
     }
 }
+
+
+
+
+
+const btnNav = document.getElementById('btn_nav');
+btnNav.addEventListener('change', function() {
+    if (this.checked) {
+        document.body.style.overflow = 'hidden'; // Deshabilitar el desplazamiento
+    } else {
+        document.body.style.overflow = ''; // Habilitar el desplazamiento
+    }
+});

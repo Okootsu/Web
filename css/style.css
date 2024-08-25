@@ -152,7 +152,7 @@ header{
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
 #organigrama img{
-    width: 80%;
+    width: 700px;
 }
 
 
@@ -275,10 +275,16 @@ nav{
     transition: .4s ease;
     background-color: #33189a;
     width: 95%;
+    overflow-y: auto;
 }
 #btn_nav:checked ~ nav {
     transform: translateX(-2%);
 }
+nav::-webkit-scrollbar {
+    display: none; /* Ocultar la barra de desplazamiento en navegadores basados en WebKit */
+}
+
+
 
 /* Pruebas */
 
@@ -307,7 +313,6 @@ nav{
     text-decoration: none;
     text-align: left;
 }
-
 .opciones li:hover .segunda_opciones{
     display: block;
 }
