@@ -72,10 +72,6 @@ function toggleMenu() {
     }
 }
 
-
-
-
-
 const btnNav = document.getElementById('btn_nav');
 btnNav.addEventListener('change', function() {
     if (this.checked) {
