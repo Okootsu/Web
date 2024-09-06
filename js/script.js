@@ -1,16 +1,3 @@
-function inicio() {
-    window.location.href = "index.html"
-}
-
-function institucion(){
-    window.location.href = "institucion.html"
-}
-
-function organigrama() {
-    window.location.href = "organigrama.html"  
-}
-
-
 // Mostrar las imágenes de la bienvenida
 let currentIndex = 0;
 const images = document.querySelectorAll('.image');
@@ -30,48 +17,14 @@ function showImage(index) {
 function nextImage() {
     showImage(currentIndex + 1);
 }
-
 function prevImage() {
     showImage(currentIndex - 1);
 }
-
 // Cambiar automáticamente cada 3 segundos
 setInterval(nextImage, 7000);
 
 
-
-
-/*
-// Menu Movil
-function toggleMenu() {
-    const menu = document.querySelector('.menu');
-    const isVisible = menu.style.display === 'flex';
-    
-    menu.style.display = isVisible ? 'none' : 'flex';
-    
-    // Deshabilitar o habilitar el desplazamiento
-    document.body.style.overflow = isVisible ? 'auto' : 'hidden';
-}
-*/
-
-
-
-
-function toggleMenu() {
-    const menu = document.querySelector('.menu');
-    const isVisible = menu.classList.contains('show');
-    
-    if (isVisible) {
-        menu.classList.remove('show');
-        // Deshabilitar el desplazamiento
-        document.body.style.overflow = 'auto';
-    } else {
-        menu.classList.add('show');
-        // Habilitar el desplazamiento
-        document.body.style.overflow = 'hidden';
-    }
-}
-
+/* Funcion que Desabilita el Scroll para el Menu Movil*/
 const btnNav = document.getElementById('btn_nav');
 btnNav.addEventListener('change', function() {
     if (this.checked) {

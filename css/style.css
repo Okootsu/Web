@@ -27,6 +27,7 @@ header{
 .contenedor {
     border-radius: 5px;
     margin: 30px 20px;
+    padding: 20px;
     background-color: white;
 }
 
@@ -49,12 +50,8 @@ header{
     flex-grow: 1; /* Permite que el contenedor de botones ocupe el espacio restante */
     border: transparent;
 }
-.boton_menu{
-    display: flex;
-    justify-content: flex-end;
-    flex-grow: 1;
-}
 
+/* Contenedor del menu movil */
 .menu_movil {
     display: none;
     justify-content: flex-end;
@@ -128,12 +125,8 @@ header{
 }
 /* Final de los Botones */
 
-#menu_usuario {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
+/* Logo de Bienvenida del Inicio */
 #logo_liceo {
     display: flex;
     justify-content: center;
@@ -148,7 +141,6 @@ header{
     justify-content: center; /* Centra la imagen horizontalmente */
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
-
 #organigrama img {
     max-width: 100%; /* Hace que la imagen no exceda el ancho del contenedor */
     height: auto; /* Mantiene la proporción de la imagen */
@@ -172,11 +164,8 @@ header{
 }
 
 /* Parrafos */
-#parrafo{
-    margin: 30px 20px;
-    padding: 20px;
+.parrafo{
     text-align: justify;
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
     line-height: 1.5;
     text-indent: 30px;
     
@@ -188,15 +177,19 @@ header{
     border: 2px rgb(201, 201, 201) solid;
     border-radius: 10px;
     padding: 10px;
-    width: 50%;
+    min-width: 40%;
+    
 }
-.seccion_noticias{
+.seccion_noticias {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .leer_mas{
     display: flex;
     justify-content: flex-end;
+    margin: 0px;
+    padding: 0px;
 }
 .leer_mas a{
     text-decoration: none;
@@ -205,8 +198,8 @@ header{
     background-color: black;
     border-radius: 5px;
     padding: 5px;
+    font-size: 12px;
 }
-
 
 
 /* Seccion de la galeria de imagenes */
@@ -252,7 +245,7 @@ header{
 
 
 
-/* Menu lateral Movil */
+/* Menu de navegacion lateral Dispositivos Moviles */
 #btn_nav{
     display: none;
 }
@@ -262,6 +255,7 @@ header{
     color: white;
     width: 30%;
     justify-content: center;
+    text-align: center;
 }
 .navegacion{
     display: flex;
@@ -273,7 +267,7 @@ nav{
     border-radius: 10px;
     right: 0;
     top: 0;
-    height: 100%;
+    height: 80%;
     top: 135px;
     transform: translateX(100%);
     transition: .4s ease;
@@ -288,12 +282,13 @@ nav::-webkit-scrollbar {
     display: none; /* Ocultar la barra de desplazamiento en navegadores basados en WebKit */
 }
 
-/* Pruebas */
-
+/* Menu de navegacion */
 .opciones{
     display: flex;
     justify-content: space-around;
     list-style: none;
+    align-items: center;
+    text-align: center;
 }
 .opciones > li > a{
     display: block;
