@@ -144,14 +144,14 @@ header{
 #organigrama img {
     max-width: 100%; /* Hace que la imagen no exceda el ancho del contenedor */
     height: auto; /* Mantiene la proporción de la imagen */
-    width: 70%; /* Ajusta el tamaño de la imagen al 50% del contenedor */
+    width: 60%; /* Ajusta el tamaño de la imagen al del contenedor */
 }
 
 
 
 /* Pie de página */
 #pie_pagina {
-    background-color: black;
+    background-color: rgb(70, 70, 70);
     border-radius: 5px;
     padding: 10px;
     color: white;
@@ -168,22 +168,26 @@ header{
     text-align: justify;
     line-height: 1.5;
     text-indent: 30px;
-    
+    padding: 0px 25px;
 }
 
 
 /* Mostrar las Noticas */
+.seccion_noticias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 .mostrar_noticia{
     border: 2px rgb(201, 201, 201) solid;
     border-radius: 10px;
     padding: 10px;
-    min-width: 40%;
-    
+    min-width: 20%;
+    margin: 20px 0px 20px 0px;
 }
-.seccion_noticias {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.mostrar_noticia img{
+    max-width: 100%;
+    height: auto;
 }
 .leer_mas{
     display: flex;
@@ -222,6 +226,7 @@ header{
 }
 .image {
     min-width: 100%;
+    width: 100%;
     box-sizing: border-box;
 }
 .buttons {
@@ -302,7 +307,7 @@ nav::-webkit-scrollbar {
     width: 200px;
     background-color: #3c1bbc;
     padding: 5px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 .segunda_opciones a{
     display: block;
@@ -314,19 +319,74 @@ nav::-webkit-scrollbar {
     display: block;
 }
 
+/* Seccion de Mision Vision*/
+.contenedor_mision_vision{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.mision_vision{
+    padding: 10px;
+    width: 45%
+}
+.img_mision_vision{
+    padding: 10px;
+    width: 50%;
+}
+.img_mision_vision img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* Pruebas Footer*/
+.logo_footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo_footer img{
+    margin: 20px;
+}
+
+.footer_main{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5px;
+    padding-bottom: 10px;
+}
+
+.direccion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 /* Adaptar a dispositivos */
 @media screen and (max-width:800px) {
+    /* Mostar el menu de los dispositivos moviles*/
     .menu{
         display: none;
     }
-
     .botones_menu{
         display: none;
     }
-
     .menu_movil{
         display: flex;
+    }
+
+    /*Mision y Vision*/
+    .mision_vision{
+        width: 100%;
+    }
+    .img_mision_vision{
+        width: 100%; 
+    }
+
+    /*Organigrama*/
+    #organigrama img {
+        width: 100%;
     }
 
 }
