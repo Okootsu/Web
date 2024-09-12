@@ -147,22 +147,6 @@ header{
     width: 60%; /* Ajusta el tamaño de la imagen al del contenedor */
 }
 
-
-
-/* Pie de página */
-#pie_pagina {
-    background-color: rgb(70, 70, 70);
-    border-radius: 5px;
-    padding: 10px;
-    color: white;
-}
-#pie_pagina h3 b p {
-    margin: 5px;
-}
-#pie_pagina h3 {
-    margin: 2px;
-}
-
 /* Parrafos */
 .parrafo{
     text-align: justify;
@@ -272,7 +256,7 @@ nav{
     border-radius: 10px;
     right: 0;
     top: 0;
-    height: 80%;
+    height: 100%;
     top: 135px;
     transform: translateX(100%);
     transition: .4s ease;
@@ -338,30 +322,80 @@ nav::-webkit-scrollbar {
     height: auto;
 }
 
-/* Pruebas Footer*/
-.logo_footer{
+
+/* Estilos generales para el footer */
+footer {
+    background-color: rgb(50, 50, 50);
+    border-radius: 5px;
+    padding: 30px;
+    color: white;
+    font-size: 14px;
+}
+/* Contenedor principal del footer */
+.main_footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+/* Estilo para el logo del footer */
+.logo_footer {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    width: 40%;
 }
-
-.logo_footer img{
-    margin: 20px;
+.logo_footer h3 {
+    margin: 20px 0px 10px 0px ;
 }
-
-.footer_main{
-    display: flex;
-    justify-content: space-evenly;
-    margin: 5px;
-    padding-bottom: 10px;
+.logo_footer p {
+    margin: 0;
+    color: rgba(230, 230, 230, 0.877);
 }
-
-.direccion{
+.logo_footer img {
+    width: 100px;
+}
+/* Estilo para la dirección */
+.direccion {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    padding-left: 10px;
+    width: 40%;
 }
+.direccion p {
+    color: rgba(230, 230, 230, 0.877);
+}
+.direccion b, .direccion p {
+    margin: 10px 0; /* Margen uniforme para ambos elementos */
+}
+/* Estilo para los enlaces rápidos */
+.enlaces_rapidos {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    width: 30%;
+    align-items: flex-start;
+}
+.enlaces_rapidos b {
+    margin: 10px 0;
+}
+.enlaces_rapidos a {
+    text-decoration: none;
+    color: rgba(230, 230, 230, 0.877);
+    margin-bottom: 10px;
+    transition: ease 0.2s;
+}
+.enlaces_rapidos a:hover {
+    transform: translateX(10%);
+    scale: 1.2;
+    color: white;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
+}
+/* Estilo para el copyright */
+.container_copiryght {
+    margin-top: 20px; /* Margen de 10px respecto al hr */
+}
+
+
+
 
 /* Adaptar a dispositivos */
 @media screen and (max-width:800px) {
@@ -389,4 +423,20 @@ nav::-webkit-scrollbar {
         width: 100%;
     }
 
+    /* Adaptar el footer a dispositivos moviles */
+    .main_footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo_footer,.direccion,.enlaces_rapidos{
+        align-items: center;
+        width: 100%;
+        margin-bottom: 20px ;
+    }
+    .enlaces_rapidos a:hover{
+        transform: inherit;
+        scale: inherit;
+        color: white;
+        text-shadow: inherit;
+    }
 }
